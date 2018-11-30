@@ -1,0 +1,374 @@
+/* the styles for the HTML elements */
+html {
+    background-image: url(images/background.jpg);
+	background-size: 100% auto;
+	background-repeat: repeat-y;
+}
+
+body {
+    font-family: Verdana;
+	width: 80%;
+	height: 100%;
+    margin: auto;
+    background-color: #eee;
+    border: 1px solid black;
+	vertical-align: center;
+}
+
+p.footer {
+	text-align: right;
+	margin-right: 0.5em;
+    padding-top: 5em;
+    clear: both;
+	font-size: 12px;
+}
+
+h1 {
+    font-size: 200%;
+    padding-left: 2em;
+	padding-top: 0.5em;
+}
+
+h2 {
+    font-size: 120%;
+    margin: 0;
+	padding-top: 2em;
+    padding-left: 3em;
+}
+
+p {
+	max-width: 90%;
+	text-align: justify;
+	margin: 0;
+	padding-top: 1em;
+    padding-left: 3.5em;
+}
+
+h1, h2 {
+    color: black;
+}
+
+a {
+	color: #606060;
+}
+
+a:hover {
+	color: blue;
+}
+
+label {
+    padding-top: 1em;
+    padding-left: 3.5em;
+    text-align: left;
+}
+
+input[type=text], select{
+	padding: .5em 0 .5em 0;
+	width: 20%;
+    margin-top: .5em;
+	margin-left: 4em;
+	font-size: 14px;
+	margin-bottom: 2em;
+}
+
+input[type=file], input[type=submit]{
+	padding: .5em 0 .5em 0;
+	width: 20%;
+    margin-top: .5em;
+	margin-left: 4em;
+	font-size: 14px;
+}
+
+textarea {
+	padding: .5em 0 .5em 0;
+	width: 80%;
+    margin-top: .5em;
+	margin-left: 4em;
+	font-size: 14px;
+	margin-bottom: 2em;
+}
+
+.partialtext {
+    margin-bottom: 5px;
+    padding-bottom: 5px;
+    max-height:150px;
+    overflow:hidden;
+    text-overflow: ellipsis;
+    content: "";
+    position:relative;
+}
+
+.partialtext:before {
+	content:'';
+    width:100%;
+    height:100%;    
+    position:absolute;
+    left:0;
+    top:0;
+    background:linear-gradient(transparent 100px, #eee);
+}
+
+
+nav {
+    background: #444;
+    border-bottom: 8px solid #ff8400;
+    overflow: hidden;
+    position: top;
+    width: 100%;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0 0 0 10px;
+    width: 100%;
+}
+nav li {
+    display: inline;
+}
+nav a {
+    color: white;
+    display: block;
+    float: left;
+    font-family: "myriad-pro-1","myriad-pro-2", HelveticaNeue, Helvetica, Arial, Sans-Serif;
+    font-size: 18px;
+    padding: 12px 0;
+    text-decoration: none;
+    text-align: center;
+    width: 15%;
+    -webkit-transition: width 0.12s ease;
+       -moz-transition: width 0.12s ease;
+         -o-transition: width 0.12s ease;
+            transition: width 0.12s ease;
+}
+nav a:hover {
+    color: white;
+}
+nav a:hover span {
+    border-bottom: 2px solid white;
+}
+nav .a-home {
+    background: #ff8400;
+}    
+nav .a-university {
+    background: #e42b2b;
+}    
+nav .a-bars {
+    background: #f4df42;
+}    
+nav .a-hiking {
+    background: #28cc4b;
+}   
+nav .a-shows {
+    background: #a800ff;
+}
+nav .a-about {
+    background: #49a7f3;
+}
+nav .a-new {
+    background: #41d05f;
+}
+nav li:hover a {
+    width: 20%;
+}
+nav ul:hover .active {
+    width: 20%;
+}
+nav ul:hover .active:hover {
+    width: 20%;
+}
+nav li a.active {
+    width: 20%;
+}
+
+
+
+.topnav {
+	overflow: hidden;
+	background-color: #333;
+}
+
+.topnav a {
+	float: left;
+	color: #f2f2f2;
+	text-align: center;
+	padding: 14px 16px;
+	text-decoration: none;
+	font-size: 17px;
+}
+
+.topnav a.right{
+	float: right;
+}
+
+.topnav a:hover {
+	background-color: #ddd;
+	color: black;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+img {
+	width: 100%;
+}
+
+.row {
+	padding-left: 3em;
+	width: 90%;
+}
+
+.row > .column {
+	padding: 1em 1em 0 1em;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Create four equal columns that floats next to eachother */
+.column {
+  float: left;
+  width: 25%;
+}
+
+/* The Modal (background) */
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  padding-top: 50px;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0,0,0,0.9); /* Black w/ opacity */
+}
+
+/* Modal Content */
+.modal-content {
+  position: relative;
+  margin: auto;
+  padding: 0;
+  width: 55%;
+  max-width: 1000px;
+}
+
+/* The Close Button */
+.close {
+  color: white;
+  position: absolute;
+  top: 10px;
+  right: 25px;
+  font-size: 35px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: #999;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+/* Next & previous buttons */
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -50px;
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  -webkit-user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+.active,
+.demo:hover {
+  opacity: 1;
+}
+
+img.hover-shadow {
+  transition: 0.3s;
+}
+
+.hover-shadow:hover {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.label-container{
+	position:fixed;
+	bottom:48px;
+	right:105px;
+	display:table;
+	visibility: hidden;
+}
+
+.label-text{
+	color:#FFF;
+	background:rgba(51,51,51,0.5);
+	display:table-cell;
+	vertical-align:middle;
+	padding:10px;
+	border-radius:3px;
+}
+
+.label-arrow{
+	display:table-cell;
+	vertical-align:middle;
+	color:#333;
+	opacity:0.5;
+}
+
+.float{
+	position:fixed;
+	width:60px;
+	height:60px;
+	bottom:40px;
+	right:40px;
+	background-color:#06C;
+	color:#FFF;
+	border-radius:50px;
+	text-align:center;
+	box-shadow: 2px 2px 3px #999;
+}
+
+.my-float{
+	font-size:24px;
+	margin-top:18px;
+}
+
+a.float + div.label-container {
+  visibility: hidden;
+  opacity: 0;
+  transition: visibility 0s, opacity 0.5s ease;
+}
+
+a.float:hover + div.label-container{
+  visibility: visible;
+  opacity: 1;
+}
